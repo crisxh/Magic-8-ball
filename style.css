@@ -1,0 +1,68 @@
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ball {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    /* background-color:black; */
+    background: radial-gradient(circle at 100px 100px, rgb(202, 198, 198), #000);
+    
+    
+}
+
+#ballCopy{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+#window{
+    display:flex;
+    justify-content: inherit;
+    align-items: inherit;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:white;
+    padding:1%;
+}
+
+#dice{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color:grey;
+    transform:rotate(45deg);
+
+}
+#output{
+    transform:rotate(-45deg);
+}
+
+.ballShake{
+    visibility:invisible;
+}
+
+.hiddenDrag{
+    visibility: hidden;
+}
+
+.fadeIn{
+    animation:fadeIn 5s;
+
+}
