@@ -8,6 +8,11 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    background-image:url("6vtultca.bmp");
+    background-repeat:no-repeat;
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: 20vw;
 }
 
 #ball {
@@ -18,7 +23,13 @@ body{
     width: 30vw;
     border-radius: 50%;
     /* background-color:black; */
-    background: radial-gradient(circle at 100px 100px, rgb(202, 198, 198), #000);
+    /* background: radial-gradient(circle at 100px 100px, rgb(202, 198, 198), #000); */
+    background-image:url("transparent-black-sphere-circle-moon-images-clipart-vector-clipart-psd-peoplep5d91ec62565ba0.7683475315698443223537.png");
+    background-size:115%;
+    background-position-x:32%;
+    background-position-y: 60%;
+    box-shadow:5px 5px 5px black;
+
     
     
 }
@@ -50,18 +61,21 @@ body{
 
 #dice>img{
     position:relative;
-    top: 12%;
-    left: 12%;
-    height: 80%;
+    top: 11%;
+    left: 11%;
+    height: 65%;
     width: 80%;
     z-index: 0;
 }
 #output{
     position:relative;
-    top: -50%;
+    top: -35%;
     left: 35%;
     /* transform:rotate(-45deg); */
     z-index: 3;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    width:fit-content;
 }
 
 .ballShake{
@@ -73,6 +87,35 @@ body{
 }
 
 .fadeIn{
-    animation:fadeIn 5s;
+    animation:fadeIn 3s;
 
+}
+
+#ballShadow{
+    border-radius: 50%;
+    height: 5vw;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.657);
+    box-shadow:0px 0px 10px black;
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-size:300%;
+        background-position-x: center;
+        background-position-y: 35vh;
+    }
+    #ball{
+        position:relative;
+        top:20vw;
+        left:10w;
+        height: 70vw;
+        width: 70vw;
+    }
+    #ballShadow{
+        width:70vw;
+        position:relative;
+        top:30vw;
+        left:10w;
+    }
 }
