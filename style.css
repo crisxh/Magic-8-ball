@@ -8,14 +8,15 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-image:url("6vtultca.bmp");
+    background-image:url("m8ball\ bg.png");
     background-repeat:no-repeat;
-    background-size: 150%;
+    background-size: 120%;
     background-position-x: center;
-    background-position-y: 20vw;
+    background-position-y: -50vw;
 }
 
 #ball {
+    position:absolute;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +31,7 @@ body{
     background-position-y: 60%;
     box-shadow:5px 5px 5px black;
     opacity:100%;
+    z-index:10;
 
     
     
@@ -58,7 +60,7 @@ body{
     height:50%;
     width: 50%;
     border-radius: 50%;
-    background-color: pink;
+    background-color: black;
     padding:1%;
     border:outset black;
     /* z-index: 5; */
@@ -114,6 +116,7 @@ body{
 
 #ballShadow{
     position:relative;
+    top:400px;
     border-radius: 50%;
     height: 5vw;
     width: 30vw;

@@ -23,6 +23,11 @@ $("#ball").draggable(
            
             
             ballShadow.css("left",ball.position()["left"]-450);
+            ballShadow.css("width",ball.position()["top"]+300);
+            ballShadow.css("height",ball.position()["top"]+100);
+            console.log(ball.position()["top"]);
+           
+
             console.log("dragging");
            
             
@@ -32,14 +37,26 @@ $("#ball").draggable(
                 opacity:0
             },500);
             $('#dice').fadeIn(2000);
+            response();
             console.log("dragEnd");
             
     
 
-        }
+        },
+        containment:"window",
        
     }
 );
+
+function response(){
+    let output=$("#output");
+    const answers=["yes","no","maybe","definitely","probably","possibly", "reply hazy, try again later","of course","never","sure why not","what do you think?"];
+    let randomNum=Math.floor(Math.random()*answers.length);
+    console.log(randomNum);
+    let answer=answers[randomNum];
+    output.html(answer);
+  
+}
 
 
 
@@ -81,14 +98,14 @@ $("#ball").draggable(
 //     container.append(ballCopy);
 // }
 
-// function ballDragEnd(ev){
-//     const answers=["yes","no","maybe","definitely","probably","possibly", "reply hazy, try again later","of course","never","sure why not","what do you think?"];
-//     let randomNum=Math.floor(Math.random()*answers.length);
-//     console.log(randomNum);
-//     let answer=answers[randomNum];
-//     output.innerHTML=answer;
-//     ball.style.visibility="visible";
-//     dice.className="fadeIn";
+function ballDragEnd(ev){
+    const answers=["yes","no","maybe","definitely","probably","possibly", "reply hazy, try again later","of course","never","sure why not","what do you think?"];
+    let randomNum=Math.floor(Math.random()*answers.length);
+    console.log(randomNum);
+    let answer=answers[randomNum];
+    output.innerHTML=answer;
+    ball.style.visibility="visible";
+    dice.className="fadeIn";
 
    
-// }
+}

@@ -1,0 +1,17 @@
+figure out how to center shadow to ball
+
+contain ball to not go further than shadow on table our out of screen
+
+   -probably using contain option in draggable()
+
+make shadow bigger/smaller with y coordinate information
+
+find good wall background (starry or witchy)
+
+make it look better on phone
+
+fix dragging on phone (or maybe figure out how to make shaking work instead)
+    
+
+-make dice fade in and out when shook and use the dice function @done
+
