@@ -23,7 +23,7 @@ $("#ball").draggable(
            
             
             ballShadow.css("left",ball.position()["left"]-450);
-            ballShadow.css("width",ball.position()["top"]+300);
+            ballShadow.css("width",ball.position()["top"]+400);
             ballShadow.css("height",ball.position()["top"]+100);
             console.log(ball.position()["top"]);
            

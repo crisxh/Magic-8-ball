@@ -13,6 +13,7 @@ body{
     background-size: 120%;
     background-position-x: center;
     background-position-y: -50vw;
+    overflow:hidden;
 }
 
 #ball {
@@ -116,7 +117,7 @@ body{
 
 #ballShadow{
     position:relative;
-    top:400px;
+    top:35vw;
     border-radius: 50%;
     height: 5vw;
     width: 30vw;
